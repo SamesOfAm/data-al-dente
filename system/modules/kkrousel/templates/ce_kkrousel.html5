@@ -1,0 +1,17 @@
+<div id="teaser-slider">
+    <div class="teaser-startpage" id="teaser-startpage">
+        <div id="background-blue"></div>
+        <img class="mobile-bg" src="../../files/img/teaser/main-teaser-small.png">
+        <div class="kkrousel">
+            <?php foreach ($this->pictures as $picture):
+                echo '<div class="banner-image" style="background-image:url(' . $picture['path'] . ')"></div>';
+            endforeach; ?>
+        </div>
+        <div id="status-icons" class="status-icons">
+            <a id="bla0" onclick="selectBanner(this)"><div id="status-icon1" class="status-icon active"></div></a>
+            <?php for($i = 1; $i < count($this->pictures); $i++):
+                echo '<a id="bla' . $i . '" onclick="selectBanner(this)"><div id="status-icon' . $i . '" class="status-icon"></div></a>';
+            endfor; ?>
+        </div>
+    </div>
+</div>

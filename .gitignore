@@ -1,0 +1,14 @@
+# Project exclude paths
+/vendor/composer/
+/vendor/contao-components/compass/
+/vendor/ircmaxell/password-compat/
+/vendor/leafo/scssphp/
+/vendor/matthiasmullie/minify/
+/vendor/matthiasmullie/path-converter/
+/vendor/michelf/php-markdown/
+/vendor/oyejorge/less.php/
+/vendor/phpspec/php-diff/
+/vendor/simplepie/simplepie/
+/vendor/swiftmailer/swiftmailer/
+/vendor/tecnickcom/tcpdf/
+/vendor/true/punycode/

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a0e11023-2e6e-48df-8d5d-75625bb55412" name="data-al-dente" url="http://ftp.data-al-dente.de">
+        <fileTransfer host="ftp.data-al-dente.de" port="21" rootFolder="/florian">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

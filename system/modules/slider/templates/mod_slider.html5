@@ -1,0 +1,19 @@
+<?php echo 'This works' ?>
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif ?>>
+<?php if ($this->headline): ?>
+
+<<?php echo $zhis->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+
+
+<?php foreach ($this->sliderInfos as $sliderInfo): ?>
+<h2><?php echo $sliderInfo['title']; ?></h2>
+<p><?php echo $sliderInfo['direction']; ?></p>
+<p><?php echo $sliderInfo['icons']; ?></p>
+<p><?php echo $sliderInfo['icons_clickable']; ?></p>
+<p><?php echo $sliderInfo['icons_shape']; ?></p>
+<p><?php echo $sliderInfo['icons_border']; ?></p>
+<p><?php echo $sliderInfo['icons_border_thickness']; ?></p>
+<?php endforeach; ?>
+
+</div>

@@ -1,0 +1,62 @@
+
+<?php if ($this->type == 'mmenu_article'): ?>
+<div class="<?php echo $this->class; ?> invisible block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+	<div>
+
+	<?php if ($this->headline): ?>
+		<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+	<?php endif; ?>
+
+		<?php echo implode('', $this->elements); ?>
+	</div>
+</div>
+<?php else: ?>
+<!-- indexer::stop -->
+
+	<nav class="<?php echo $this->class; ?> invisible block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+	<div class="menu-footer-background"></div>
+	<?php if ($this->headline): ?>
+		<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+	<?php endif; ?>
+
+		<a href="<?php echo $this->request; ?>#<?php echo $this->skipId; ?>" class="invisible"><?php echo $this->skipNavigation; ?></a>
+
+		<?php echo $this->items; ?>
+
+		<div id="menu-footer">
+			<div class="menu-footer-address">
+				<span>GSES GmbH Sondershausen<br>Schachtstraße 20<br>99706 Sondershausen</span>
+			</div>
+			<div class="menu-footer-contact">
+				<div class="menu-footer-tel">
+					<a class="menu-contact-link" href="tel:+4936326550">
+						<span class="menu-footer-symbol">g</span>
+						<div class="menu-footer-info-wrapper">
+							<span class="menu-footer-info">0 36 32 - 65 50</span>
+						</div>
+					</a>
+				</div>
+				<div class="menu-footer-fax">
+					<a class="menu-contact-link" href="tel:+493632655205">
+						<span class="menu-footer-symbol">h</span>
+						<div class="menu-footer-info-wrapper">
+							<span class="menu-footer-info">0 36 32 - 65 52 05</span>
+						</div>
+					</a>
+				</div>
+				<div class="menu-footer-mail">
+					<a class="menu-contact-link" href="mailto:info@gses.de">
+						<span class="menu-footer-symbol">i</span>
+						<div class="menu-footer-info-wrapper">
+							<span class="menu-footer-info">info@gses.de</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<a id="<?php echo $this->skipId; ?>" class="invisible">&nbsp;</a>
+	</nav>
+<!-- indexer::continue -->
+<?php endif; ?>
